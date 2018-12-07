@@ -22,6 +22,8 @@ def js_render(request):
         prefs = {"profile.managed_default_content_settings.images": 2}
         # 将参数设置到chrome_opt里面
         chrome_opt.add_experimental_option("prefs", prefs)
+        chrome_opt.add_argument('--headless')
+        chrome_opt.add_argument('--no-sandbox')
         # 模拟浏览器的时候将chrome_opt添加进去
     browser = webdriver.Chrome(executable_path=chrome_path, chrome_options=chrome_opt)
     browser.get(url)
