@@ -22,6 +22,8 @@ if os.path.exists("/root/env"):
 else:
     CHROME_DRIVER_PATH = "C:\Python\Python36\Scripts\chromedriver.exe"
 
+SPLASH_URL = 'http://188.131.195.22:8050/'
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
 
