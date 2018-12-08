@@ -20,7 +20,7 @@ class MovieSpider(scrapy.Spider):
     name = "iidvd_spider"
 
     custom_settings = {
-        "DOWNLOAD_DELAY": 10,
+        "DOWNLOAD_DELAY": 0,
         "RETRY_TIMES": 1,
         "DEPTH_LIMIT": 90,
         "ROUNTINE_INTERVAL": 60 * 60 * 24 * 2,
@@ -30,6 +30,7 @@ class MovieSpider(scrapy.Spider):
         "DOWNLOADER_MIDDLEWARES": {
             'source_spider.spiders.middlewares.RandomUserAgent': 501,
             'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+            # "source_spider.spiders.middlewares.SeleniumMiddleware": 503
         },
         "SPIDER_MIDDLEWARES": {
             'source_spider.spiders.middlewares.RoutineSpiderMiddleware': 543,
@@ -99,4 +100,3 @@ class MovieSpider(scrapy.Spider):
             )
             if flag:
                 logging.getLogger(__name__).info(f"save movie title:{title} url:{url}")
-
