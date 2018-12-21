@@ -1,0 +1,1 @@
+from .meituan_spider import ShopSpider

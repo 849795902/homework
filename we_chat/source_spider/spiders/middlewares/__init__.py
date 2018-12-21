@@ -2,3 +2,4 @@ from source_spider.spiders.middlewares.retry_middleware import OptionalRetryMidd
 from source_spider.spiders.middlewares.ua_proxy import RandomUserAgent
 from source_spider.spiders.middlewares.rountine_middleware import RoutineSpiderMiddleware
 from source_spider.spiders.middlewares.selenium_middleware import SeleniumMiddleware
+from source_spider.spiders.middlewares.refer_middleware import AddRefer
