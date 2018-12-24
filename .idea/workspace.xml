@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a90d0a-588f-4e90-bd5e-708a030fbffb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_splash_spider/test_splash_spider/spiders/movie_spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/splash_middleware.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we_chat/source_spider/spiders/lagou_spider/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we_chat/source_spider/spiders/lagou_spider/lagou_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we_chat/source_spider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/we_chat/source_spider/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,40 +16,57 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/homework$splash_spider.coverage" NAME="splash_spider Coverage Results" MODIFIED="1544283230310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/we_chat/source_spider/spiders/test_splash_spider" />
-    <SUITE FILE_PATH="coverage/homework$movie_spider.coverage" NAME="movie_spider Coverage Results" MODIFIED="1544277042467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/we_chat/source_spider/spiders/movie_spider" />
+    <SUITE FILE_PATH="coverage/homework$tieba_spider__1_.coverage" NAME="tieba_spider (1) Coverage Results" MODIFIED="1544358508248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/we_chat/source_spider/spiders/tieba_spider" />
+    <SUITE FILE_PATH="coverage/homework$movie_spider.coverage" NAME="movie_spider Coverage Results" MODIFIED="1545309012389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider" />
     <SUITE FILE_PATH="coverage/homework$test_spider.coverage" NAME="test_spider Coverage Results" MODIFIED="1544280074089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_splash_spider/test_splash_spider/spiders" />
+    <SUITE FILE_PATH="coverage/homework$lagou_spider.coverage" NAME="lagou_spider Coverage Results" MODIFIED="1545578609102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/we_chat/source_spider/spiders/lagou_spider" />
+    <SUITE FILE_PATH="coverage/homework$combine_video_spider.coverage" NAME="combine_video_spider Coverage Results" MODIFIED="1545044164878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider" />
+    <SUITE FILE_PATH="coverage/homework$tieba_spider.coverage" NAME="tieba_spider Coverage Results" MODIFIED="1544369545649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/we_chat/source_spider/spiders/tieba_spider" />
+    <SUITE FILE_PATH="coverage/homework$meituan_spider.coverage" NAME="meituan_spider Coverage Results" MODIFIED="1545052733458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/we_chat/source_spider/spiders/meituan_spider" />
+    <SUITE FILE_PATH="coverage/homework$video_movie_spider.coverage" NAME="video_movie_spider Coverage Results" MODIFIED="1544375819088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider" />
+    <SUITE FILE_PATH="coverage/homework$amac_spider.coverage" NAME="amac_spider Coverage Results" MODIFIED="1545577638238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1628547576">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.31" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.38" value="2" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="26" />
+          <entry key="py" value="68" />
+          <entry key="ts" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="26" />
+          <entry key="Python" value="68" />
+          <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="4" />
-          <entry key="py" value="1428" />
-          <entry key="txt" value="14" />
+          <entry key="Python Console" value="6" />
+          <entry key="dummy" value="27" />
+          <entry key="py" value="5828" />
+          <entry key="txt" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="1428" />
+          <entry key="PLAIN_TEXT" value="73" />
+          <entry key="Python" value="5834" />
         </counts>
       </usages-collector>
     </session>
@@ -56,25 +74,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/test_splash_spider/splash_spider.py">
+        <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/lagou_spider/lagou_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39">
-              <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
-              <folding>
-                <element signature="e#25#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="84" selection-start-line="3" selection-start-column="84" selection-end-line="3" selection-end-column="84" />
-              <folding>
-                <element signature="e#0#86#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="101">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -88,6 +91,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pagelet_html_frs-list/pagelet/thread_list</find>
+      <find>print</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -96,7 +105,6 @@
       <list>
         <option value="$PROJECT_DIR$/we_chat/source_spider/django_api/views.py" />
         <option value="$PROJECT_DIR$/we_chat/source_spider/django_settings.py" />
-        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/selenium_middleware.py" />
         <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/movie_spider/movie_spider.py" />
         <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/test_splash_spider/movie_spider.py" />
         <option value="$PROJECT_DIR$/we_chat/source_spider/settings.py" />
@@ -105,8 +113,31 @@
         <option value="$PROJECT_DIR$/test_splash_spider/test_splash_spider/spiders/test_spider.py" />
         <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/test_splash_spider.py" />
         <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/splash_middleware.py" />
-        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/__init__.py" />
         <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/test_splash_spider/splash_spider.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/tieba_spider/models.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/__init__.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/refer_middleware.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/tieba_spider/tieba_spider.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/models.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/pipelines/__init__.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/pipelines/video_downloader.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/combine_video_spider.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/video_movie_spider.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/meituan_spider/model.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/meituan_spider/__init__.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/selenium_middleware.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/utils/fix_selenium.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/meituan_spider/meituan_spider.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/movie_spider.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/model.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider_6.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider_5.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider_4.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider_3.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider_2.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider_1.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider.py" />
+        <option value="$PROJECT_DIR$/we_chat/source_spider/spiders/lagou_spider/lagou_spider.py" />
       </list>
     </option>
   </component>
@@ -116,11 +147,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="980" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="108" />
+    <option name="y" value="104" />
+    <option name="width" value="1149" />
+    <option name="height" value="598" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -139,17 +170,6 @@
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="test_splash_spider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="test_splash_spider" type="462c0819:PsiDirectoryNode" />
-              <item name="test_splash_spider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
               <item name="we_chat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -171,7 +191,7 @@
               <item name="we_chat" type="462c0819:PsiDirectoryNode" />
               <item name="source_spider" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
-              <item name="middlewares" type="462c0819:PsiDirectoryNode" />
+              <item name="lagou_spider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
@@ -183,11 +203,7 @@
             </path>
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="we_chat" type="462c0819:PsiDirectoryNode" />
-              <item name="source_spider" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-              <item name="test_splash_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -197,19 +213,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\homework\we_chat\source_spider\spiders\lagou_spider" />
+      <recent name="F:\homework\we_chat\source_spider\spiders\amac_spider" />
+      <recent name="F:\homework\we_chat\source_spider\spiders" />
+      <recent name="F:\homework\we_chat\source_spider\spiders\video_spider" />
+      <recent name="F:\homework\we_chat\source_spider\spiders\video_spider\pipelines" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\homework\we_chat\source_spider\spiders\test_splash_spider" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\homework\we_chat\source_spider\spiders\test_splash_spider" />
-      <recent name="F:\homework\test_splash_spider\test_splash_spider\spiders" />
-      <recent name="F:\homework\we_chat\source_spider\spiders\middlewares" />
-      <recent name="F:\homework" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -224,7 +242,95 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.splash_spider">
+  <component name="RunManager" selected="Python.lagou_spider">
+    <configuration name="amac_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="homework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="scrapy" />
+      <option name="PARAMETERS" value="crawl amac_spider" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="combine_video_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="homework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="scrapy" />
+      <option name="PARAMETERS" value="crawl yy_combine_spider" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lagou_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="homework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/we_chat/source_spider/spiders/lagou_spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="scrapy" />
+      <option name="PARAMETERS" value="crawl lagou_spider" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="meituan_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="homework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/we_chat/source_spider/spiders/meituan_spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="scrapy" />
+      <option name="PARAMETERS" value="crawl meituan_spider" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="movie_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="homework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -233,74 +339,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/we_chat/source_spider/spiders/movie_spider" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="scrapy" />
-      <option name="PARAMETERS" value="crawl iidvd_spider" />
+      <option name="SCRIPT_NAME" value="F:\homework\we_chat\source_spider\spiders\amac_spider\amac_spider.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="splash_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="homework" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/we_chat/source_spider/spiders/test_splash_spider" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="scrapy" />
-      <option name="PARAMETERS" value="crawl splash_spider" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="homework" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_splash_spider/test_splash_spider/spiders" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="scrapy" />
-      <option name="PARAMETERS" value="crawl test_splash_spider" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
+      <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.combine_video_spider" />
+      <item itemvalue="Python.meituan_spider" />
       <item itemvalue="Python.movie_spider" />
-      <item itemvalue="Python.test_spider" />
-      <item itemvalue="Python.splash_spider" />
+      <item itemvalue="Python.amac_spider" />
+      <item itemvalue="Python.lagou_spider" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.splash_spider" />
-        <item itemvalue="Python.test_spider" />
+        <item itemvalue="Python.lagou_spider" />
+        <item itemvalue="Python.amac_spider" />
         <item itemvalue="Python.movie_spider" />
+        <item itemvalue="Python.meituan_spider" />
+        <item itemvalue="Python.combine_video_spider" />
       </list>
     </recent_temporary>
   </component>
@@ -318,16 +384,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19213313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4262295" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27704918" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.42131147" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -335,8 +401,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3295082" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.41243863" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -344,6 +410,30 @@
       <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18305598" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27704918" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46065575" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.24918033" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -351,14 +441,32 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/pipelines/video_downloader.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/we_chat/source_spider/spiders/meituan_spider/meituan_spider.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/we_chat/source_spider/spiders/lagou_spider/lagou_spider.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/we_chat/build/lib/source_spider/spiders/utils/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/app_spider/app_spider.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/ua_proxy.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/we_chat/source_spider/django_settings.py">
@@ -372,9 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="29" column="25" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -382,9 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -392,22 +494,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#616#657#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/test_splash_spider/movie_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/test_splash_spider/movie_spider.py" />
     <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/movie_spider/movie_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -415,65 +508,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/test_splash_spider/test_splash_spider.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_splash_spider/test_splash_spider/spiders/test_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#25#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_splash_spider/test_splash_spider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-end-line="33" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/selenium_middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <marker date="1544277175263" expanded="true" signature="463:582" ph="..." />
-            <marker date="1544277175263" expanded="true" signature="1208:1243" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/splash_middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="84" selection-start-line="3" selection-start-column="84" selection-end-line="3" selection-end-column="84" />
-          <folding>
-            <element signature="e#0#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/test_splash_spider/test_splash_spider.py" />
+    <entry file="file://$PROJECT_DIR$/test_splash_spider/test_splash_spider/spiders/test_spider.py" />
+    <entry file="file://$PROJECT_DIR$/test_splash_spider/test_splash_spider/settings.py" />
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/splash_middleware.py" />
     <entry file="file://C:/Python/Python36/Lib/site-packages/scrapy_splash/request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-38">
@@ -481,13 +519,250 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/tieba_spider/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python/Python36/Lib/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="181" selection-start-line="181" selection-end-line="181" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/rountine_middleware.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/ua_proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="18" lean-forward="true" selection-end-line="13" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/test_splash_spider/splash_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+        <state relative-caret-position="858">
+          <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/refer_middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/video/99年极品骚宝宝化身小小女仆/UF1WBXO35149000.ts" />
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/pipelines/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="51" selection-start-column="51" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/pipelines/video_downloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding>
+            <element signature="e#26#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/pipelines/base_download.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/combine_video_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/meituan_spider/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python/Python36/Lib/site-packages/scrapy/spiderloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/movie_spider/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/meituan_spider/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/movie_spider/ygdy_movie_spider.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/middlewares/selenium_middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="24" column="65" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python/Python36/Lib/site-packages/selenium/webdriver/chrome/options.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2622" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/tieba_spider/tieba_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="57" column="56" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/utils/fix_selenium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/meituan_spider/meituan_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#25#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/meituan_spider/pipelines/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/video_spider/video_movie_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="20" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python/Python36/Lib/site-packages/twisted/internet/task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="671" selection-start-line="671" selection-end-line="671" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="86" column="42" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider_3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider_4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider_5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider_6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="80" column="62" selection-start-line="80" selection-start-column="62" selection-end-line="80" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/amac_spider/amac_spider_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/we_chat/source_spider/spiders/lagou_spider/lagou_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>

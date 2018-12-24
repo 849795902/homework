@@ -1,16 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import scrapy
-import os
 import re, json, random, logging
 import urllib, hashlib
-import time, datetime
-from django.forms import model_to_dict
 from urllib import parse as urlparse
-from datetime import timedelta
 from scrapy.utils.python import to_bytes
 from source_spider.spiders.amac_spider.model import AmacModel
-from ..utils.url_type import parse_url_type
 
 
 class AmacSpider(scrapy.Spider):
@@ -25,7 +20,6 @@ class AmacSpider(scrapy.Spider):
         "DEPTH_LIMIT": 90,
         "CONCURRENT_REQUESTS": 10000,
         "DOWNLOAD_TIMEOUT": 5,
-        "MEDIA_ALLOW_REDIRECTS": True,
         "DOWNLOADER_MIDDLEWARES": {
             'source_spider.spiders.middlewares.RandomUserAgent': 501,
             'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
@@ -65,11 +59,12 @@ class AmacSpider(scrapy.Spider):
             for node in node_list:
                 detail_url = node.xpath(".//span[@class='l3']/a/@href").extract_first()
                 title = node.xpath(".//span[@class='l3']/a/text()").extract_first()
-                author=node.xpath(".//span[@class='l4']//text()").extract_first()
+                author = node.xpath(".//span[@class='l4']//text()").extract_first()
                 detail_url = urlparse.urljoin(url, detail_url)
                 publish_time = node.xpath(".//span[@class='l5']/text()").extract_first()
                 if all((detail_url, title, publish_time)):
-                    item = {"detail_url": detail_url, "title": title, 'publish_time': publish_time, 'name': name,'author':author}
+                    item = {"detail_url": detail_url, "title": title, 'publish_time': publish_time, 'name': name,
+                            'author': author}
                     yield scrapy.Request(url=detail_url, meta={"item": item}, callback=self.parse_detail)
             # page_num=1
             for num in range(2, page_num + 1):
@@ -87,19 +82,19 @@ class AmacSpider(scrapy.Spider):
             url = item.get("detail_url").strip()
             md5 = hashlib.md5(to_bytes(url)).hexdigest()
             title = item.get("title")
-            author=item.get("author")
-            publish_time=item.get("publish_time")
+            author = item.get("author")
+            publish_time = item.get("publish_time")
             parent_name = item.get("name")
             app_item, flag = AmacModel.objects.get_or_create(
                 md5=md5,
                 defaults={
-                    "title": title,
+                    "title": title,  # 标题
                     'url': url,
                     'md5': md5,
-                    'parent_name': parent_name,
-                    'content': content,
-                    'author':author,
-                    'publish_time':publish_time
+                    'parent_name': parent_name,  # 吧名
+                    'content': content,  # 内容
+                    'author': author,  # 作者
+                    'publish_time': publish_time  # 发布时间
                 }
             )
             if flag:
