@@ -45,7 +45,7 @@ class MovieSpider(scrapy.Spider):
 
     def __init__(self, *args, **kwargs):
         super(MovieSpider, self).__init__(*args, **kwargs)
-        self.start_url = "http://www.yezhulu.one/videos?o= &page={}"
+        self.start_url = "http://www.yzlu.one/videos?o= &page={}"
         self.end_page = 284
 
     def start_requests(self):
