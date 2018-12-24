@@ -22,8 +22,8 @@ class SeleniumMiddleware(object):
         self.chrome_opt = webdriver.ChromeOptions()
         prefs = {"profile.managed_default_content_settings.images": 2}
         # 将参数设置到chrome_opt里面
-        # self.chrome_opt.add_experimental_option("prefs", prefs)
-        # self.chrome_opt.add_argument('--headless')
+        self.chrome_opt.add_experimental_option("prefs", prefs)
+        self.chrome_opt.add_argument('--headless')
         self.chrome_opt.add_argument('--no-sandbox')
         # 模拟浏览器的时候将chrome_opt添加进去
         self.browser = webdriver.Chrome(executable_path=self.path, chrome_options=self.chrome_opt)
