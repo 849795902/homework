@@ -24,6 +24,7 @@ else:
 
 SPLASH_URL = 'http://188.131.195.22:8050/'
 
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
 
