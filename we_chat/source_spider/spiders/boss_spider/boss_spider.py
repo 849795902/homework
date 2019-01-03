@@ -20,20 +20,23 @@ class BossSpider(scrapy.Spider):
     name = "boss_spider"
 
     custom_settings = {
-        "DOWNLOAD_DELAY": 1,
-        "RETRY_TIMES": 1,
+        "DOWNLOAD_DELAY": 2,
+        "RETRY_TIMES": 5,
         "DEPTH_LIMIT": 90,
-        "ROUNTINE_INTERVAL": 60 * 60 * 24 * 2,
+        # "ROUNTINE_INTERVAL": 0,
         "CONCURRENT_REQUESTS": 32,
         "DOWNLOAD_TIMEOUT": 20,
         "MEDIA_ALLOW_REDIRECTS": True,
+        "REDIRECT_ENABLED": False,
         "DOWNLOADER_MIDDLEWARES": {
             'source_spider.spiders.middlewares.RandomUserAgent': 501,
             'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
             # "source_spider.spiders.middlewares.SeleniumMiddleware": 503
+            'source_spider.spiders.middlewares.RandomProxy': 531,
+            'source_spider.spiders.middlewares.ProcessAllExceptionMiddleware': 540
         },
         "SPIDER_MIDDLEWARES": {
-            'source_spider.spiders.middlewares.RoutineSpiderMiddleware': 543,
+            # 'source_spider.spiders.middlewares.RoutineSpiderMiddleware': 543,
             'scrapy.spidermiddlewares.depth.DepthMiddleware': 900,
         },
     }
@@ -50,6 +53,11 @@ class BossSpider(scrapy.Spider):
     def parse_index(self, response):
         url = response.url
         page = response.meta.get("page")
+        if response.status == 302:
+            time.sleep(10 * 60)
+            yield scrapy.Request(
+                url=url, callback=self.parse_index, dont_filter=True, meta={"page": page}
+            )
         parents_node = response.xpath(
             "//div[contains(@class,'company-list')]/ul/li//a[contains(@ka,'brand_list_company')]")
         for sub_node in parents_node:
@@ -67,7 +75,12 @@ class BossSpider(scrapy.Spider):
 
     def parse_company(self, response):
         url = response.url
+
         company_name = response.meta.get("company_name")
+        if response.status == 302:
+            time.sleep(10 * 60)
+            yield scrapy.Request(url=url, meta={"company_name": company_name, 'page': page},
+                                 callback=self.parse_company)
         page = response.meta.get("page")
         parent_node = response.xpath('//div[@class="job-list"]/ul/li/a')
         for item_node in parent_node:
@@ -81,11 +94,14 @@ class BossSpider(scrapy.Spider):
                                  callback=self.parse_company)
 
     def parse_job(self, response):
+        url = response.url
         company = response.meta.get("company_name")
+        if response.status == 302:
+            time.sleep(10 * 60)
+            yield scrapy.Request(url=url, meta={"company_name": company}, callback=self.parse_job)
         title = response.xpath('//div[contains(@class,"job-primary")]//div[@class="name"]/h1/text()').extract_first()
         wage = response.xpath(
             '//div[contains(@class,"job-primary")]//div[@class="name"]//span[@class="badge"]/text()').extract_first()
-        url = response.url
         md5 = hashlib.md5(to_bytes(url)).hexdigest()
         city_soon = response.xpath(
             '//div[contains(@class,"job-primary")]//div[@class="info-primary"]/p//text()').extract()
@@ -116,6 +132,11 @@ class BossSpider(scrapy.Spider):
                     "describe": self.parse_html(describe),
                 }
             )
+            print({
+                    "title": title,
+                    "company": company,
+                    "desc": self.parse_html(describe),
+                })
             if flag:
                 logging.getLogger(__name__).info(f"save movie title:{title} url:{url}")
 

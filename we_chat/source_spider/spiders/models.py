@@ -1,6 +1,7 @@
 from source_spider.spiders.utils import DjangoItem
 from django.db import models
 import django.utils.timezone as timezone
+import scrapy
 
 
 class AppModel(models.Model):
@@ -35,4 +36,5 @@ class MovieModel(models.Model):
 
 
 class MovieModelMeta(DjangoItem):
-    django_model = AppModel
+    django_model = MovieModel
+    id = scrapy.Field()

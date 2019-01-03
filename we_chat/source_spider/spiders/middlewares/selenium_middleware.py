@@ -5,12 +5,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from scrapy.http import HtmlResponse
 from logging import getLogger
+from fake_useragent import UserAgent
 
 
 class SeleniumMiddleware(object):
     """
     若添加了该中间件后不需要渲染了，在meta中设置is_render:0
     """
+
     @classmethod
     def from_crawler(cls, crawler):
         return cls(timeout=crawler.settings.get("SELENIUM_TIMEOUT"), path=crawler.settings.get("CHROME_DRIVER_PATH"))

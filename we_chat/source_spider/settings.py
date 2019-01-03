@@ -24,6 +24,14 @@ else:
 
 SPLASH_URL = 'http://188.131.195.22:8050/'
 
+REDISHOST = "188.131.195.22"
+REDISPORT = 6379
+REDISPASSWORD = "!@#abcABC123"
+
+PROXY_URL = "http://188.131.195.22:8000/django_api/get_proxy/"
+
+ELS_URI = "188.131.195.22"
+ELS_DB = "spider"
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32

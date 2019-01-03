@@ -9,7 +9,7 @@ from django.forms import model_to_dict
 from urllib import parse as urlparse
 from datetime import timedelta
 from scrapy.utils.python import to_bytes
-from source_spider.spiders.models import MovieModel
+from source_spider.spiders.models import MovieModel, MovieModelMeta
 from ..utils.url_type import parse_url_type
 
 
@@ -23,7 +23,7 @@ class MovieSpider(scrapy.Spider):
         "DOWNLOAD_DELAY": 0,
         "RETRY_TIMES": 1,
         "DEPTH_LIMIT": 90,
-        "ROUNTINE_INTERVAL": 60 * 60 * 24 * 2,
+        "ROUNTINE_INTERVAL": 60 * 60 * 24,
         "CONCURRENT_REQUESTS": 32,
         "DOWNLOAD_TIMEOUT": 20,
         "MEDIA_ALLOW_REDIRECTS": True,
@@ -36,6 +36,9 @@ class MovieSpider(scrapy.Spider):
             'source_spider.spiders.middlewares.RoutineSpiderMiddleware': 543,
             'scrapy.spidermiddlewares.depth.DepthMiddleware': 900,
         },
+        "ITEM_PIPELINES": {
+            "source_spider.spiders.movie_spider.pipelines.ElasticsearchPipeline": 300
+        }
     }
 
     def __init__(self, *args, **kwargs):
@@ -85,6 +88,7 @@ class MovieSpider(scrapy.Spider):
         url = response.xpath('//input[@class="down_url"]/@value').extract_first()
         if url:
             url = url.strip()
+            url = url[0:20] + url[32:]
             md5 = hashlib.md5(to_bytes(url)).hexdigest()
             url_cate = parse_url_type(url)
             app_item, flag = MovieModel.objects.get_or_create(
@@ -100,3 +104,6 @@ class MovieSpider(scrapy.Spider):
             )
             if flag:
                 logging.getLogger(__name__).info(f"save movie title:{title} url:{url}")
+                item = MovieModelMeta(app_item)
+                item["id"] = app_item.id
+                yield item

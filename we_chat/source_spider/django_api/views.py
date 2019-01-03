@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http.response import HttpResponse, JsonResponse
 from selenium import webdriver
 from django.conf import settings
+from source_spider.spiders.ip_spider.models import IPModel
+import random
 
 
 def js_render(request):
@@ -31,3 +33,12 @@ def js_render(request):
     page_source = browser.page_source
     browser.close()
     return HttpResponse(page_source)
+
+
+def get_proxy(request):
+    IP_list = IPModel.objects.all()
+    count = len(IP_list)
+    id = random.randint(0, count)
+    ip = IP_list[id].ip
+    ip_type = IP_list[id].type
+    return HttpResponse(ip_type + "://" + ip)
