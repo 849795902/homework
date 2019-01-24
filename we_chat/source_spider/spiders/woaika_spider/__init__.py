@@ -1,0 +1,1 @@
+from .woaika_spider import AppSpider

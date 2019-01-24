@@ -28,6 +28,23 @@ class BossSpider(scrapy.Spider):
         "DOWNLOAD_TIMEOUT": 20,
         "MEDIA_ALLOW_REDIRECTS": True,
         "REDIRECT_ENABLED": False,
+        # # Ensure use this Scheduler
+        # "SCHEDULER": "scrapy_redis_bloomfilter.scheduler.Scheduler",
+        #
+        # Ensure all spiders share same duplicates filter through redis
+        # "DUPEFILTER_CLASS": "source_spider.spiders.utils.dupefilters.BloomDupeFilter",
+        #
+        # # Redis URL
+        # "REDIS_URL": 'redis://:abcABC123@47.101.214.74:6379/1',
+        #
+        # # Number of Hash Functions to use, defaults to 6
+        # "BLOOMFILTER_HASH_NUMBER": 6,
+        #
+        # # Redis Memory Bit of Bloomfilter Usage, 30 means 2^30 = 128MB, defaults to 30
+        # "BLOOMFILTER_BIT": 30,
+
+        # # Persist
+        # "SCHEDULER_PERSIST": True,
         "DOWNLOADER_MIDDLEWARES": {
             'source_spider.spiders.middlewares.RandomUserAgent': 501,
             'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
@@ -133,10 +150,10 @@ class BossSpider(scrapy.Spider):
                 }
             )
             print({
-                    "title": title,
-                    "company": company,
-                    "desc": self.parse_html(describe),
-                })
+                "title": title,
+                "company": company,
+                "desc": self.parse_html(describe),
+            })
             if flag:
                 logging.getLogger(__name__).info(f"save movie title:{title} url:{url}")
 
